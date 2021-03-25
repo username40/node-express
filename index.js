@@ -10,6 +10,10 @@ const hbs = exphbs.create({
   extname: 'hbs'
 })
 
+console.log('is ok');
+console.log('is ok');
+console.log('is ok');
+
 app.engine('hbs', hbs.engine)
 app.set('view engine', 'hbs')
 
