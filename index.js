@@ -24,6 +24,8 @@ app.get('/about', (req, res) => {
   res.render('about')
 })
 
+app.use(express.static('public'))
+
 const PORT = process.env.PORT || 3000
 
 app.listen(PORT, () => {
